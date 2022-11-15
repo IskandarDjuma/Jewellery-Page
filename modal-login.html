@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selection of jewelry, necklaces, earrings, rings, bracelets from different manufacturers">
+  <title>Online jewelry store</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/CormorantGaramond-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CormorantGaramond-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body class="page-body">
+
+  <header class="page-header page-header--closed page-header--nojs">
+    <div class="container page-header__wrap">
+      <button class="page-header__toggle" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="page-header__wrapper">
+        <form class="page-header__search search" action="https://echo.htmlacademy.ru/courses" method="post">
+          <svg class="search__icon" width="14" height="14">
+            <use xlink:href="img/sprite-auto.svg#icon-search"></use>
+          </svg>
+          <label class="visually-hidden" for="search-text">enter the search text</label>
+          <input class="search__field" type="search" name="search-text" id="search-text" placeholder="Type here to search" autocomplete="off">
+        </form>
+        <div class="page-header__logo logo">
+          <a href="main-page.html">
+            <svg class="logo__icon" width="66" height="66">
+              <use xlink:href="img/sprite-auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="page-header__user-menu user-menu">
+          <li class="user-menu__item user-menu__item--login">
+            <a class="user-menu__button" href="#">Login</a>
+          </li>
+          <li class="user-menu__item user-menu__item--cart">
+            <a href="#">
+              <span>Cart</span>
+              <span class="user-menu__cart-count">0</span>
+              <svg class="user-menu__icon" width="20" height="18">
+                <use href="img/sprite-auto.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#">What’s new</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Chokers</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Necklaces</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Rings</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Earrings</a>
+          </li>
+        </ul>
+        <ul class="main-nav__tab-list">
+          <li class="main-nav__tab-item"><a href="#">About CH</a></li>
+          <li class="main-nav__tab-item"><a href="#">Stores & Hours</a></li>
+          <li class="main-nav__tab-item"><a href="#">Contact Us</a></li>
+          <li class="main-nav__tab-item"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container page-main">
+    <h1 class="visually-hidden">Personal Account page</h1>
+    <section class="modal-login">
+      <picture>
+        <!-- 1x: 430px; 2x: 860px -->
+        <source type="image/webp" srcset="img/intro-modal@1x.webp 1x, img/intro-modal@2x.webp 2x">
+        <img src="img/intro-modal@1x.jpg" srcset="img/intro-modal@2x.jpg" alt="
+          image of gold cufflinks" width="430" height="138">
+      </picture>
+      <h2 class="visually-hidden">Log In form</h2>
+      <form class="modal__login-form form" action="https://echo.htmlacademy.ru" method="POST">
+        <h3>Log In</h3>
+        <ul class="form__list">
+          <li class="form__item form__item--login">
+            <input type="email" name="login-login" data-login-input="" id="login-login" required="" minlength="2" placeholder="Your E-mail">
+            <label class="visually-hidden" for="login-login"> Enter your email</label>
+          </li>
+          <li class="form__item form__item--password">
+            <input type="password" name="password" data-pas-input="" id="password" required="" minlength="10" maxlength="18" placeholder="Password">
+            <label class="visually-hidden" for="password">Введеите номер телефона</label>
+          </li>
+          <li class="form__item form__item--restore">
+            <a href="#">Forgot your password?</a>
+          </li>
+          <li class="form__item">
+            <button class="form__button button button--primary" type="submit">Log In</button>
+          </li>
+          <li class="form__item form__item--sign-up">
+            <p>Don’t have an account?
+              <a href="#">Sign up</a>
+            </p>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container page-footer__wrap">
+      <div class="news">
+        <h3>The good stuff in your inbox</h3>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <form class="news__form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="mail"></label>
+          <input type="email" placeholder="Your E-mail" id="mail" name="mail" required="">
+          <button type="submit">Sign Up
+            <svg width="29" height="9">
+              <use href="/img/sprite-auto.svg#icon-next"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#">Ordering & Payment</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#">Returns & Exchanges</a>
+          </li>
+          <li class="footer-nav__item footer-nav__item--4">
+            <a href="#">Delivery</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#">About CH</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#">Stores & Hours</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#">Jobs</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#">
+              <svg width="8" height="15">
+                <use xlink:href="img/sprite-auto.svg#icon-fb"></use>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite-auto.svg#icon-inst"></use>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg width="16" height="15">
+                <use xlink:href="img/sprite-auto.svg#icon-pinterest"></use>
+              </svg>
+              <span>Pinterest</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg width="15" height="13">
+                <use xlink:href="img/sprite-auto.svg#icon-twitter"></use>
+              </svg>
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
